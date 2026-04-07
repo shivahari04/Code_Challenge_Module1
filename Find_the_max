@@ -1,0 +1,21 @@
+#Find the maximum number on a list
+
+"""
+Define a function called find_max that accepts a list of integers or floats.
+Return the largest number in the list.
+Do not use the built-in max() function — try to solve it manually using:
+A for loop to check each number
+A variable to track the current maximum
+A for loop to check each number
+A variable to track the current maximum
+"""
+
+def find_max ():
+    user_input = list(map(float, input("Enter numbers: ").strip().split()))
+    max_number =user_input[0]
+    for number in user_input[1:]:
+        if max_number<number:
+            max_number=number
+    return max_number
+answer = find_max()
+print(f"Maximum number is {answer}")
