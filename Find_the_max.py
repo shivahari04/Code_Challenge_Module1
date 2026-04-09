@@ -10,7 +10,7 @@ A for loop to check each number
 A variable to track the current maximum
 """
 
-def find_max ():
+def find_max (user_input):
     user_input = list(map(float, input("Enter numbers: ").strip().split()))
     max_number =user_input[0]
     for number in user_input[1:]:
